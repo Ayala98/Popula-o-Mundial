@@ -1,0 +1,15 @@
+import java.text.NumberFormat;
+import java.util.Locale;
+
+public class PopulacaoMundial {
+   public static void main(String[] args) {
+      int anos = Integer.valueOf(args[0]);
+      double populacaoAtual =  7689793818.0;
+      double taxaDeCrescimento = 0.0107;
+      
+      NumberFormat nf = NumberFormat.getInstance(new Locale("pt", "BR"));
+      nf.setMaximumFractionDigits(0);
+
+      System.out.println("> " + nf.format(populacaoFutura) + " pessoas.");
+   }
+}
